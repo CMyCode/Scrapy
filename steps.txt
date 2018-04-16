@@ -1,0 +1,31 @@
+Follow the below steps 
+----------------
+
+enter following commands on command prompt
+pip install scrapy
+
+go to your folder(ex:D:/python )
+then enter below commands
+scrapy startproject Scrapeproxemate
+you will see folders created in below path
+(D:\python\Scrapeproxemate\)
+
+then on command prompt run below
+cd Scrapeproxemate
+
+scrapy genspider proxemate  www.proxemate.com
+
+copy below file  into(D:\python\Scrapeproxemate\Scrapeproxemate\)
+https://github.com/CMyCode/Scrapy/blob/master/items.py
+
+
+copy below file into (D:\python\Scrapeproxemate\Scrapeproxemate\spiders)
+https://github.com/CMyCode/Scrapy/blob/master/proxemate.py
+
+change path variable in the above file 
+
+
+
+then on command prompt run below
+
+scrapy crawl proxemate --nolog -t csv -o->results.csv
